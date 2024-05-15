@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Packages\Example\Controllers;
+namespace App\Packages\Laravel\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Packages\Example\Models\Example;
+use App\Packages\Laravel\Models\Laravel;
 
-class ExampleController extends Controller
+class LaravelController extends Controller
 {
     public function index()
     {
         // Recupera todos os radares e retorna como JSON
-        $radares = Example::all();
+        $radares = Laravel::all();
         return response()->json($radares);
     }
 
@@ -23,7 +23,7 @@ class ExampleController extends Controller
         ]);
 
         // Cria um novo radar com base nos dados recebidos e o salva no banco de dados
-        $radar = new Example();
+        $radar = new Laravel();
         $radar->name = $request->name;
         $radar->save();
 

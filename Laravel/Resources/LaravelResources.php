@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Packages\Example\Resources;
+namespace App\Packages\Laravel\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ExampleResources extends JsonResource
+class LaravelResources extends JsonResource
 {
     /**
      * Transform the resource into an array.

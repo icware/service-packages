@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Packages\Example\Models;
+namespace App\Packages\Laravel\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Example extends Model
+class Laravel extends Model
 {
     use HasFactory;
 
     // Especifique o nome da tabela, se for diferente do padrão (opcional)
-    protected $table = 'examples';
+    protected $table = 'Laravels';
 
     // Defina os campos que podem ser preenchidos em massa (opcional)
     protected $fillable = ['name'];

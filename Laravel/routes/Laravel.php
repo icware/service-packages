@@ -2,10 +2,10 @@
 
 
 use Illuminate\Support\Facades\Route;
-use App\Packages\Example\Controllers\ExampleController;
+use App\Packages\Laravel\Controllers\LaravelController;
 
 
-Route::prefix('example')->group(function () {
+Route::prefix('laravel')->group(function () {
 
     Route::get('', function () {
         return response()->json(['route' => 'allow']); 
