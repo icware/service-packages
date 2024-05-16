@@ -1,13 +1,21 @@
 * {
   outline: none;
   padding: 1px;
-  font: 10pt;
-  font-family: sans-serif;
   margin-bottom: 8px;
   margin-left: 5px;
 }
 
 body {
+  background-color: rgb(13, 17, 23);
+  color: rgb(216, 216, 201);
+  padding: 5px;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
   background-color: rgb(13, 17, 23);
   color: rgb(216, 216, 201);
   padding: 5px;
@@ -171,4 +179,18 @@ input[type="radio"]:checked + label::after {
   background: white;
   border-radius: 50%;
   left: 5px;
+}
+
+nav {
+  padding: 30px;
+}
+
+a {
+  font-weight: bold;
+  color: rgba(214, 237, 8, 0.883);
+  text-decoration: none;
+}
+
+a.router-link-exact-active {
+  color: rgba(0, 100, 139, 0.883);
 }
