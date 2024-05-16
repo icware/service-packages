@@ -30,9 +30,10 @@ const Routers = [
 ];
 
 //Alterar nome / exportar
-const vueRouts = Routers.map((route) => ({
+const vueRouters = Routers.map((route) => ({
   ...route,
   path: `${prefix}/${route.path}`,
+  meta: route.meta,
 }));
 
-export default vueRouts;
+export default vueRouters;
